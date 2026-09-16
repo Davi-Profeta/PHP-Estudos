@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 10vh;
+    background-color: rgb(0, 81, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+main{
+    height: 85vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#city{
+    margin: 1rem    ;
+}
+
+section{
+    height: 5vh;
+    background-color: rgb(0, 81, 255);
+}
