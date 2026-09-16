@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#return{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header{
+    height: 15vh;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(15, 39, 160);
+    border-top: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.conteudo{
+    display: flex;
+    flex: 1;
+    flex-wrap: nowrap;
+}
+
+section{
+    width: 20%;
+    color: aliceblue;
+    background-color: rgb(15, 39, 160);
+    border-bottom: solid 5px black;
+    border-left: solid 5px black;
+    border-right: solid 5px black;
+    padding: 1rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    border-top: solid 5px black;
+}
+
+.options{
+    border: solid 2px aliceblue;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.cadastrar{
+    display: none;
+    width: 25vw;
+    border: solid 2px black;
+}
+
+.FormCadastro{
+    background-color: rgb(15, 39, 160);
+    color: aliceblue;
+    height: 40vh;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    align-items: center;
+}
+
+.optionCadratro{
+    width: 22vw;
+}
+
+/* ===================================================== */
+.consulta{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 84vh;
+}
+
+.containerForm{
+    height: 50vh;
+    width: 30vw;
+    border: solid 4px black;
+    border-radius: 15px;
+    background-color:rgb(15, 39, 160);
+    color: antiquewhite;
+    box-shadow: 10px 10px 15px black;
+}
+
+.cargoSelect{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.btn{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    border: solid black 2px;
+    border-radius: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+#id_cargo{
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+}

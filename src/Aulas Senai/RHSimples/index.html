@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>RH Simples</title>
+
+</head>
+
+<body>
+    
+    <div class="corpo">
+
+        <header>
+            <h1>Sistema RH</h1>
+        </header>
+
+        <div class="conteudo">
+
+            <section>
+    
+                <div class="options">
+                    <p>Cadastrar</p>
+                </div>
+                <div class="options">
+                    <p>Consultar</p>
+                </div>
+
+            </section>
+
+            <main>
+                
+                <div class="cadastrar">
+
+                    <form class="FormCadastro" action="assets/index.php" method="post">
+
+                        <div class="optionCadratro">
+                            <label for=""></label>
+                            Nome: <input type="text" name="name" id="">
+                        </div>
+
+                        <div class="optionCadratro">
+                            <label for=""></label>
+                            Cargo:<select required name="cargo_id">
+                                <option selected disabled value="">Selecione uma opção</option>
+                                <option value="1" >Desenvolvedor Full Stack Senior</option>
+                                <option value="2" >Engenheiro de DevOps</option>
+                                <option value="3" >Arquiteto de Soluções em Nuvem</option>
+                                <option value="4" >Analista de Segurança da Informação</option>
+                                <option value="5" >Líder Técnico (Tech Lead)</option>
+                            </select>
+                        </div>
+
+                        <div class="optionCadratro">
+                            <label for="">Data Nascimento</label>
+                            <input type="date" name="date" id="">
+                        </div>
+
+                        <div class="optionCadratro">
+                            <label for="">Telefone</label>
+                            <input type="tel" name="tel" id="">
+                        </div>
+
+                        <div class="optionCadratro">
+                            <label for="">Endereço</label>
+                            <input type="text" name="endereco" id="">
+                        </div>
+
+                        <button>Cadastrar</button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="consulta">
+
+                    <div class="containerForm">
+
+                        <form action="assets/index.php" method="post">
+
+                            <div class="cargoSelect">
+                                Cargo: <select name="Name_cargo" id="id_cargo">
+                                    <option selected disabled value="">Selecione uma opção</option>
+                                    <option value="Desenvolvedor Full Stack Senior" >Desenvolvedor Full Stack Senior</option>
+                                    <option value="Engenheiro de DevOps" >Engenheiro de DevOps</option>
+                                    <option value="Arquiteto de Soluções em Nuvem" >Arquiteto de Soluções em Nuvem</option>
+                                    <option value="Analista de Segurança da Informação" >Analista de Segurança da Informação</option>
+                                    <option value="Líder Técnico (Tech Lead)" >Líder Técnico (Tech Lead)</option>
+                                </select>
+                            </div>
+
+                            <div class="btn">
+                                <button id="btn">Consultar</button>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+            </main>
+
+
+        </div>
+
+    </div>
+    
+
+</body>
+    <script src="assets/script.js"></script>
+</html>
