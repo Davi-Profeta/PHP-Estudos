@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+
+</head>
+
+<body>
+    
+    <main>
+
+        <h1>Cadastro de clientes</h1>
+
+        <form id="form" action="Back/index.php" method="post">
+
+            <label for="">Nome</label>
+            <input type="text" name="name" required placeholder="Digite seu nome">
+
+            <label for="">Telefone</label>
+            <input type="tel" id="tel" maxlength="12" name="tel" required placeholder="Digite seu telefone">
+
+            <label for="">Email</label>
+            <input type="text" name="email" required placeholder="Digite seu email">
+
+            <label for="">Cidade</label>
+            <select required name="city">
+                <option selected disabled value="">Selecione uma opção</option>
+                <option value="Belo Horizonte" >Belo Horizonte</option>
+                <option value="Contagem" >Contagem</option>
+                <option value="Justinópolis" >Justinópolis</option>
+                <option value="Ribeirão das Neves" >Ribeirão das Neves</option>
+                <option value="Betim" >Betim</option>
+                <option value="Santa Luzia" >Santa Luzia</option>
+                <option value="Venda Nova" >Venda Nova</option>
+                <option value="Sabará" >Sabará</option>
+                <option value="Brumadinho" >Brumadinho</option>
+                <option value="Ibirité" >Ibirité</option>
+            </select>
+
+            <button id="submit" type="submit">Cadastrar</button>
+
+        </form>
+
+    </main>
+
+    
+
+</body>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-bottom: 2rem;
+    color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: solid 5px aliceblue;
+    border-radius: 15px;
+    padding: 2rem;
+    background-color: aliceblue;
+    width: 25vw;
+}
+
+label{
+    margin-bottom: 0.3rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+button{
+    margin-top: 1.5rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: 2rem;
+}
