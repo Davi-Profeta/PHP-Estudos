@@ -10,6 +10,15 @@
     SET Preco = '$Price'
     WHERE Id_Produtos = '$Produto'");
 
+    $nomeProduto = "";
+
+    $consultaNome = mysqli_query($conexao,
+    "SELECT Nome_Produto FROM produtos WHERE Id_Produtos = '$Produto'");
+
+    if ($consultaNome && $linhaNome = mysqli_fetch_assoc($consultaNome)) {
+        $nomeProduto = $linhaNome['Nome_Produto'];
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -18,13 +27,59 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Estoque</title>
 
-</head>
+</head> 
 
 <body>
     
-    <h1>Siiiiu</h1>
+    <script src="../assets/consultar.js" defer ></script>
+
+    <div class="container">
+
+        <header class="header">
+
+            <div class="logo">
+
+            </div>
+
+            <div class="abas">
+                <div class="fundoA">
+                    <img src="photos/analitico.png" alt="">
+                </div>
+                <p id="consultar"></p>
+            </div>
+
+            <div class="abas">
+                <div class="fundoA">
+                    <img src="photos/analitico.png" alt="">
+                </div>
+                <p id="cadFornecedor"></p>
+            </div>
+
+            <div class="abas">
+                <div class="fundoA">
+                    <img src="photos/analitico.png" alt="">
+                </div>
+                <p id="cadProduto"></p>
+            </div>
+
+
+        </header>
+
+        <main class="main">
+
+            <div class="index">
+
+                <p id="produtoSi">Produto <?php echo htmlspecialchars($nomeProduto); ?> atualizado para R$ <?php echo number_format((float)$Price, 2, ',', '.'); ?></p>
+
+            </div>
+
+        </main>
+
+    </div>
+
 
 </body>
 
