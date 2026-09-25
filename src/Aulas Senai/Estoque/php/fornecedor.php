@@ -43,6 +43,20 @@
                 <p id="consultar"></p>
             </div>
 
+            <div class="abas">
+                <div class="fundoA">
+                    <img src="photos/analitico.png" alt="">
+                </div>
+                <p id="cadFornecedor"></p>
+            </div>
+
+            <div class="abas">
+                <div class="fundoA">
+                    <img src="photos/analitico.png" alt="">
+                </div>
+                <p id="cadProduto"></p>
+            </div>
+
 
         </header>
 
@@ -50,7 +64,7 @@
 
             <div class="index">
 
-                <p>Cadastro feito com sucesso!</p>
+                <p id="Feito">Cadastro feito com sucesso!</p>
 
             </div>
 
