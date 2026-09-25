@@ -18,7 +18,6 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 
     <meta charset="UTF-8">
@@ -26,9 +25,11 @@
     <link rel="stylesheet" href="../assets/style.css">
     <title>Estoque</title>
 
-</head>
+</head> 
 
 <body>
+    
+    <script src="../assets/produto.js" defer ></script>
 
     <div class="container">
 
@@ -62,50 +63,19 @@
 
         </header>
 
+        <main class="main">
 
-        <div class="cadastrar">
+            <div class="index">
 
-            <div class="mainCadastrar">
-
-                <form class="formCadastrar" action="php/produto.php" method="post">
-
-                    <h2>Cadastrar Produto</h2>
-
-                    <div class="inputsCad">
-                        <label for="">Nome</label>
-                        <input class="inpCad" type="text" name="name" placeholder="Digite o nome">
-                    </div>
-
-                    <div class="inputsCad">
-                        <label for="">Preço</label>
-                        <input class="inpCad" type="text" name="preco">
-                    </div>
-
-                    <div class="inputsCad">
-                        <label for="">Quantidade</label>
-                        <input class="inpCad" type="number" name="quantidade">
-                    </div>
-
-                    <div class="inputsCad">
-                        <label for="">Fornecedor</label>
-                        <select name="fornecedor" id="">
-
-                        </select>
-                    </div>
-
-
-
-                    <button class="btnCad">Confirmar</button>
-
-                </form>
+                <p id="Feito">Cadastro feito com sucesso!</p>
 
             </div>
 
-        </div>
+        </main>
 
     </div>
 
+
 </body>
-<script src="../assets/script.js"></script>
 
 </html>
