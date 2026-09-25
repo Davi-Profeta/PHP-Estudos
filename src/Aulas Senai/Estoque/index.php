@@ -76,17 +76,31 @@
                                     <?php
                                         include_once("assets/conexao.php");
 
-                                        $consultar = mysqli_query(
-                                            $conexao,
-                                            "SELECT Id_Produtos, Nome_Produto FROM produtos"
-                                        );
+                                        $consultar = false;
+                                        try {
+                                            $consultar = mysqli_query(
+                                                $conexao,
+                                                "SELECT Id_Produtos, Nome_Produto, Preco, Quantidade FROM produtos"
+                                            );
+                                        } catch (\mysqli_sql_exception $e) {
+                                            $consultar = false;
+                                        }
 
-                                        while ($linha = mysqli_fetch_assoc($consultar)) {
-                                            echo "<option value='" . $linha['Id_Produtos'] . "'>" . ($linha['Nome_Produto']) . "</option>";
+                                        if ($consultar) {
+                                            while ($linha = mysqli_fetch_assoc($consultar)) {
+                                                echo "<option value='" . $linha['Id_Produtos'] . "' data-nome='" . htmlspecialchars($linha['Nome_Produto']) . "' data-preco='" . $linha['Preco'] . "' data-quantidade='" . $linha['Quantidade'] . "'>" . ($linha['Nome_Produto']) . "</option>";
+                                            }
                                         }
 
                                     ?>
                                 </select>
+
+                            </div>
+
+                            <div class="infoProduto" id="infoProduto">
+                                <p><strong>Nome:</strong> <span id="infoNome"></span></p>
+                                <p><strong>Quantidade em estoque:</strong> <span id="infoQuantidade"></span></p>
+                                <p><strong>Preço atual:</strong> R$ <span id="infoPreco"></span></p>
                             </div>
 
                             <div class="atualizarPrice">
