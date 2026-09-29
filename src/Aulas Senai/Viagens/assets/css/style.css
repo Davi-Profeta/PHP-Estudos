@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    border: solid 2px red;
+    background-color: aliceblue;
+    z-index: 1;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border: solid 2px red;
+    height: 100%;
+    width: 50%;
+}
+
+.imgTeste{
+    height: 100%;
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+.mainContainer{
+    display: flex;
+    height: 130vh;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25vw;
+    background-color: green;
+}
+
+.titleFilter{
+    border: solid 2px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px red;
+    height: 10%;
+}
+
+main{
+    height: 100%;
+    width: 75vw;
+    background-color: aqua;
+    overflow-y: auto;
+}
+
+.viagens{
+    display: flex;
+    border: solid 2px pink;
+    height: 40vh;
+    margin: 1rem;
+}
+
+.imgViagen{
+    height: 100%;
+    width: 30%;
+    border: solid 2px red;
+    overflow: hidden;
+}
+
+.landscape{
+    height: 100%;
+    width: auto;
+}
+
+.descriptionViagem{
+    height: 100%;
+    width: 70%;
+    border: solid 2px red;
+}
