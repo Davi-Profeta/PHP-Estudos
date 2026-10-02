@@ -17,33 +17,7 @@
     $_SESSION['tel'] = $Tel;
     $_SESSION['email'] = $Email;
 
-    $pesquisaCPF = mysqli_query($conexao,
-        "SELECT CPF
-        FROM cliente
-        WHERE CPF = '$cpf' "
-    );
-
-    if(mysqli_num_rows($pesquisaCPF) == 0){
-
-        echo "CPF já utilizado";
-
-    } else {
-
-        $FormCliente = mysqli_query(
-        $conexao,
-        "INSERT INTO cliente(Nome_Cliente,Telefone,Email,CPF)
-        VALUES ('$Name', '$Tel', '$Email', '$cpf') "
-        );
-
-        // Obtém o ID que acabou de ser gerado
-        $id_gerado = mysqli_insert_id($conexao);
-        $_SESSION['Id'] = $id_gerado;
-
-        header("Refresh: 3; url=assets/index.php"); // espera 3 segundos e vai para assets/index.php
-
-
-    };
-
+    
 ?>
 
 <!DOCTYPE html>
@@ -72,8 +46,51 @@
 
         <div class="container">
 
-            <p>Cadastro feito com sucesso!</p>
-            <p>Você será redirecionado para as viagens em instantes...</p>
+            <?php
+
+                $pesquisaCPF = mysqli_query($conexao,
+                    "SELECT CPF
+                    FROM cliente
+                    WHERE CPF = '$cpf' "
+                );
+
+                if(mysqli_num_rows($pesquisaCPF) > 0){
+
+                    echo "
+
+                        <p>CPF já utilizado!</p>
+                        <p>Você será redirecionado para arrumar os dados em instantes...</p>
+
+                    ";
+
+                    header("Refresh: 4; url=index.html");
+
+                } else {
+
+                    $FormCliente = mysqli_query(
+                    $conexao,
+                    "INSERT INTO cliente(Nome_Cliente,Telefone,Email,CPF)
+                    VALUES ('$Name', '$Tel', '$Email', '$cpf') "
+                    );
+
+                    // Obtém o ID que acabou de ser gerado
+                    $id_gerado = mysqli_insert_id($conexao);
+                    $_SESSION['Id'] = $id_gerado;
+
+                    echo "
+
+                        <p>Cadastro feito com sucesso!</p>
+                        <p>Você será redirecionado para as viagens em instantes...</p>
+
+                    ";
+
+                    header("Refresh: 3; url=assets/index.php"); // espera 3 segundos e vai para assets/index.php
+
+
+                };
+
+
+            ?>
 
         </div>
 
