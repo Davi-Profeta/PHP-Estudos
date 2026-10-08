@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 2rem;
+    color: #333333;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    border: 2px solid #318fb8;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.aba {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+.aba label {
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #444444;
+    margin-bottom: 0.4rem;
+}
+
+.aba input,
+.aba select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background-color: #fff;
+}
+
+.aba input:focus,
+.aba select:focus {
+    border-color: #318fb8;
+    box-shadow: 0 0 5px rgba(49, 143, 184, 0.4);
+}
+
+.aba button {
+    width: 100%;
+    padding: 12px;
+    background-color: #318fb8;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.aba button:hover {
+    background-color: #256f90;
+}

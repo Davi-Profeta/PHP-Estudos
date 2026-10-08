@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+}
+
+.title{
+    font-size: 1.7rem;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titleTurma{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.turma{
+    border: solid 5px aliceblue;
+    border-radius: 10px;
+    height: 30vh;
+    padding: 1.5rem;
+    background-color: #4682B4;
+    color: aliceblue;
+    transition: 0.5s ease;
+}
+.turma:hover{
+    transform: scale(103%);
+    cursor: pointer;
+    box-shadow: rgb(69, 69, 69) 5px 5px 10px;
+}
+
+.titleTurma{
+    height: 20%;
+}
+
+.corpoTurma{
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}

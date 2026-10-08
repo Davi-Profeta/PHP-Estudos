@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/turma.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="title">
+            <h2>Cadastro de Turma</h2>
+        </div>
+
+        <form class="container" action="../php/cad_turma.php" method="post">
+
+            <div class="aba">
+                <label for=""> Turno </label>
+                <select class="opt" name="turno" >
+                    <option disabled selected value="">Selecione um Turno</option>
+                    <option value="Manhã"> Manhã </option>
+                    <option value="Tarde"> Tarde </option>
+                    <option value="Noite"> Noite </option>
+                </select>
+            </div>
+
+            <div class="aba">
+                <label for=""> Curso </label>
+                <select class="opt" name="curso">
+                    <option disabled selected value="">Selecione um Curso</option>
+                    <option value="Assistente Web"> Assistente Web </option>
+                    <option value="Técnico em desenvolvimento de sistema"> Técnico em desenvolvimento de sistema </option>
+                    <option value="Técnico em Jogos Digitais"> Técnico em Jogos Digitais </option>
+                    <option value="Técnico em Redes"> Técnico em Redes </option>
+                </select>
+            </div>
+
+            <div class="aba">
+                <button id="btn">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </main>
+    
+</body>
+
+</html>

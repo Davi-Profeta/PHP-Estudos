@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+main{
+    height: 100vh;
+}
+
+.title{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.alunos{
+    height: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin-top: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #318fb8; /* Tom de azul igual ao do topo e bordas */
+    color: white;
+    font-weight: bold;
+    padding: 12px 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tr:hover {
+    background-color: #eef7fc; /* Destaque azul suave ao passar o cursor */
+}
