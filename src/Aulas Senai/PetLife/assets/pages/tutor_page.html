@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tutor.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Cadastrar Tutor</h2>
+
+    </header>
+
+    <div class="container">
+
+        <form class="form" action="../php/tutor.php" method="post">
+
+            <div class="aba">
+                <label for="">Nome</label>
+                <input required class="ipt" type="text" name="name" id="">
+            </div>
+
+            <div class="aba">
+                <label for="">CPF</label>
+                <input maxlength="11" required class="ipt" type="text" name="cpf" id="">
+            </div>
+
+            <div class="aba">
+                <label for="">Telefone</label>
+                <input maxlength="12" required class="ipt" type="tel" name="tel" id="">
+            </div>
+
+            <div class="cad">
+                <button id="cad">Cadastrar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+   
+    
+</body>
+
+</html>
